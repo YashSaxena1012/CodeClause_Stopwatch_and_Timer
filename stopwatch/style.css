@@ -1,0 +1,82 @@
+:root {
+    font-size: 20px;
+    box-sizing: inherit;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  p:not(:last-child) {
+    margin-bottom: 1.5em;
+  }
+  
+  body {
+    font: 1em/1.618 Inter, sans-serif;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px;
+    color: #224;
+    background:
+      url(https://source.unsplash.com/E8Ufcyxz514/2400x1823)
+      center / cover no-repeat fixed;
+  }
+
+  .container{
+    display:flex;
+    flex-wrap: wrap;
+    column-gap: 10rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: fit-content;
+    padding: 25px;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(13px);
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .card-title{
+    font-size: larger;
+    font-weight: 600;
+    color: rgb(43, 42, 42);
+  }
+
+  .visit{
+    text-decoration: none;
+    color: rgb(22, 22, 24);
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .visit {
+      outline: none;
+      border-color: rgb(82, 82, 83);
+      color: #fff;
+      box-shadow: 0 0 40px 40px rgb(89, 89, 90) inset, 0 0 0 0 rgb(62, 62, 63);
+      transition: all 150ms ease-in-out;
+      width: 5rem;
+      padding: 2px;
+      border-radius: 1rem;
+      text-align: center;
+}
+.visit:hover {
+    color: rgb(30, 30, 34);
+  box-shadow: 0 0 10px 0 rgb(59, 59, 59) inset, 0 0 10px 4px rgb(73, 73, 77);
+}
